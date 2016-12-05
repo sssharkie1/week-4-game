@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gem Game</title>
+
+<!-- reset -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+   <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+  <h1 class="title">Gem Game</h1>
+
+      <div class="col-md-12">
+          <div class="panel panel-default">
+            <h3 class="instructions-heading">How to Play the Game</h3>
+          </div>
+                <div class="instructions-body">
+                  <p> You will be given a random number at the start of the game. </p>
+                  <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                  <p> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                  <p> The value of each crystal is hidden from you unitl you click on it.</p>
+                  <p>Each time when the game starts, the game will change the values of each crystal</</p>
+                </div>
+      </div>    
+  </div>
+
+<!--computer number -->
+<section class="col-md-3 col-md-offset-2" id="scores">
+        <div>
+        <h2 class="computerPick">Match what the computer has picked:</h2>
+        <h3 class="computerNumber"></h3>
+        </div>
+
+        <div id="currentTotal">Your Total:
+               <h2 id="runningTotal">0</h2>
+        </div>
+
+        <div id="winsLosses">wins/losses</div>
+
+</section>
+
+<aside class="col-med-2 col-md-offset-8" id="playButton">
+    <button id="playAgain" type="button"class="btn btn-default">play again?</button>
+</aside>   
+
+<!--gems-->
+
+<div id="gems" class="col-md-4 col-md-offset-4">
+<button id="red"><img src ="assets/images/red_gem.png" style="height: 75px"><h1></h1></button> 
+<button id="blue"><img src ="assets/images/blue_gem.png" style=  "height: 75px"><h1></h1></button>
+<button id="pink"><img src ="assets/images/teardrop.png" style="height: 75px"><h1></h1></button>
+<button id="green"><img src ="assets/images/green_gem.png" style="height: 75px"><h1></h1></button>
+
+</div>
+
+ 
+
+
+
+
+
+
+<style> 
+
+
+  
+  body {  
+    background-image: url("assets/images/background.png");
+  }
+
+</style>
+
+  <!-- JQuery -->
+
+    <!-- overall Bootstrap CLose -->
+  </div>
+
+  <script src="assets/javascript/game.js"></script>
+  
+
+</body>
+</html>
