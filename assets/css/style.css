@@ -1,33 +1,37 @@
 .title {
 	text-align: center;
-	font-size: 18px;
+	font-size: 28px;
+	font-family: 'Sacramento', cursive;
+	font-weight: bolder;
 }
-
-.computerNumber {
-	font-size: 18px;
-}	
 
 .instructions-heading {
 	font-size: 14px;
 	text-align: center;
+
 }
-`
+
 .instructions-body {
 	font-size: 12px;
 }
 
 .computerPick {
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Sacramento', cursive;
+}
+
+.computerNumber {
 	font-size: 14px;
 	text-align: center;
 }
 
-.computerNumber {
-	text-align: center;
-}
-
 #winsLosses {
-	font-size: 16px;
+	font-size: 18px;
 	text-align: center;
+	font-family: 'Sacramento', cursive;
+	margin-top: 60px;
+	font-weight: bold;
 }
 
 #totalScore {
@@ -35,10 +39,13 @@
 	font-size: 14px;
 }
 
-#currentTotal {
+#yourTotal {
 	font-size: 16px;
+	font-family: 'Sacramento', cursive;
+}
+#currentTotal {
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 #runningTotal {
@@ -50,24 +57,6 @@
 	margin-top: 70px;
 }
 
-#gems{
-	margin-top: 25px;
-}
-
-#red {
-	width: 22%;
- 	border: 0 none;
-
-}
-#blue {
-		width: 22%;
- 	border: 0 none;
-}
-#pink {
-		width: 22%;
- 	border: 0 none;
-}
-#green {
-		width: 22%;
- 	border: 0 none;
+#junk{
+	margin-top: 5px;
 }
