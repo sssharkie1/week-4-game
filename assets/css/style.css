@@ -58,5 +58,7 @@
 }
 
 #junk{
+	clear: both;
 	margin-top: 5px;
+	padding-left: 65px;
 }

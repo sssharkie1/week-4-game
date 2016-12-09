@@ -2,7 +2,7 @@
 
     $(document).ready(function() {
 
-      // global variables
+// global variables
 
 var randomNumber = 0;
 var jars = 0;
@@ -17,8 +17,8 @@ var totalScore = 0;
 
 
 //functions 
-
-function compRandomNumber() {  //function generates a random number 
+//function generates a random number 
+function compRandomNumber() {  
 
 randomNumber= Math.floor((Math.random() * 120) + 12);
 var compRandomNumber = "<h3>"+ randomNumber +"</h3>";
@@ -27,7 +27,7 @@ totalScore= 0;
 console.log( "random comp number " + randomNumber);
 };
 
-function gemsNumber() {
+function junkNumber() {
 	var numberJars = Math.floor((Math.random() * 12) + 1);
 	var numberBooks = Math.floor((Math.random() * 12) + 1);
 	var numberChairs = Math.floor((Math.random() * 12) + 1);
@@ -42,7 +42,8 @@ function gemsNumber() {
 	console.log("skillet " + numberSkillet);
 };
 
-function gemClick (){  //function totals the click choices and diplays on html
+//function totals the click choices and diplays on html
+function junkClick (){  
 		$("#jars").click(function(){
 			totalScore = jars+totalScore;
 			$("#runningTotal").html(totalScore);
@@ -72,8 +73,8 @@ function gemClick (){  //function totals the click choices and diplays on html
 				
 
 };
-
-function winsLosses(){ //tracks wins and losses
+//tracks wins and losses
+function winsLosses(){ 
 	 if (totalScore === randomNumber){
 		alert("You Win!");
 		wins++;
@@ -108,13 +109,13 @@ function game(){
 	totalScore = 0;
 	randomNumber = 0;
 	compRandomNumber();
-	gemsNumber();
+	junkNumber();
 
 
 }
 
 game();
-gemClick();
+junkClick();
 
 })
 
